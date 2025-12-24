@@ -1,45 +1,100 @@
 export default function Contact() {
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/mlgrkyqr"; //
+
   return (
-    <div className="bg-white rounded-2xl border p-8 max-w-2xl">
-      <h1 className="text-3xl font-bold">Contact Me</h1>
-      <p className="mt-3 text-gray-600">
-        Fill this form (for now it doesn’t send anywhere, it’s just UI).
-      </p>
+    <div className="max-w-4xl mx-auto space-y-6">
+      {/* Header */}
+      <section className="relative overflow-hidden bg-white border border-blue-100 rounded-[28px] shadow-sm">
+        <div className="pointer-events-none absolute -top-16 -left-16 h-64 w-64 rounded-full bg-blue-100/70 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-20 -right-20 h-72 w-72 rounded-full bg-blue-200/30 blur-3xl" />
 
-      <form className="mt-6 space-y-4">
-        <div>
-          <label className="text-sm font-medium">Name</label>
-          <input
-            className="mt-1 w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Your name"
-          />
+        <div className="relative p-8 md:p-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs">
+            💌 contact
+          </div>
+
+          <h1 className="mt-4 text-3xl md:text-4xl font-bold text-gray-900">
+            Contact me
+          </h1>
+
+          <p className="mt-3 text-gray-600 max-w-2xl leading-relaxed">
+            Leave me a message here. I will be in touch as soon as possible.
+          </p>
         </div>
 
-        <div>
-          <label className="text-sm font-medium">Email</label>
-          <input
-            type="email"
-            className="mt-1 w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="you@email.com"
-          />
-        </div>
+        <div className="h-2 bg-gradient-to-r from-blue-100 via-white to-blue-100" />
+      </section>
 
-        <div>
-          <label className="text-sm font-medium">Message</label>
-          <textarea
-            rows="4"
-            className="mt-1 w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Write something..."
-          />
-        </div>
+      <section className="bg-white border border-blue-100 rounded-[28px] p-8 shadow-sm">
+        <form action={FORMSPREE_ENDPOINT} method="POST" className="space-y-5">
+          <input type="text" name="_gotcha" className="hidden" />
+          <input type="hidden" name="_subject" value="New message from portfolio website" />
 
-        <button
-          type="button"
-          className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
-        >
-          Send
-        </button>
-      </form>
+          <div>
+            <label className="text-sm text-gray-600">Name</label>
+            <input
+              name="name"
+              type="text"
+              required
+              placeholder="Your name"
+              className="mt-2 w-full rounded-2xl border border-blue-100 px-4 py-2.5
+                         bg-blue-50/40 text-gray-800
+                         focus:outline-none focus:border-blue-300
+                         focus:ring-2 focus:ring-blue-200/60 transition"
+            />
+          </div>
+
+          <div>
+            <label className="text-sm text-gray-600">Email</label>
+            <input
+              name="email"
+              type="email"
+              required
+              placeholder="you@email.com"
+              className="mt-2 w-full rounded-2xl border border-blue-100 px-4 py-2.5
+                         bg-blue-50/40 text-gray-800
+                         focus:outline-none focus:border-blue-300
+                         focus:ring-2 focus:ring-blue-200/60 transition"
+            />
+          </div>
+
+          <div>
+            <label className="text-sm text-gray-600">Message</label>
+            <textarea
+              name="message"
+              rows="5"
+              required
+              placeholder="Write your message..."
+              className="mt-2 w-full rounded-2xl border border-blue-100 px-4 py-2.5
+                         bg-blue-50/40 text-gray-800
+                         focus:outline-none focus:border-blue-300
+                         focus:ring-2 focus:ring-blue-200/60 transition resize-none"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="w-full mt-6 rounded-2xl bg-blue-100 text-blue-700 py-3
+                       border border-blue-200
+                       hover:bg-blue-600 hover:text-white
+                       transition-all duration-300
+                       hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.25)]"
+          >
+            Send Message
+          </button>
+
+          <p className="text-xs text-gray-400 text-center">
+            This form uses Formspree to deliver messages to my email.
+          </p>
+        </form>
+      </section>
+
+      {/* Calm note */}
+      <section className="bg-blue-50/70 border border-blue-100 rounded-[28px] p-6 shadow-sm">
+        <p className="text-sm text-blue-900/70">
+          I’m always happy to connect and learn from new environment 🩵
+        </p>
+      </section>
     </div>
   );
 }

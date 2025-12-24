@@ -1,10 +1,23 @@
 export default function About() {
   const skills = ["Python", "Pandas", "C/C++", "SQL", "React", "Tailwind CSS", "JavaScript", "HTML/CSS", "Git/GitHub"];
-  const interests = [
-    { title: "Frontend", note: "I love clean layouts and smooth interactions." },
-    { title: "UI/UX", note: "Soft, consistent design that feels easy to use." },
-    { title: "AI", note: "Curious about how models learn—slowly building intuition." },
-  ];
+ const interests = [
+  {
+    title: "Data Analysis",
+    note: "I enjoy working with data and understanding patterns through careful analysis.",
+  },
+  {
+    title: "UI / UX",
+    note: "I’m interested in designing interfaces that feel simple, clear, and comfortable to use.",
+  },
+  {
+    title: "AI",
+    note: "I’m curious about how models learn and how AI can be applied thoughtfully.",
+  },
+  {
+    title: "Web & App Development",
+    note: "I like building web and app projects and learning how ideas turn into real products.",
+  },
+];
 
   return (
     <div className="max-w-5xl mx-auto space-y-6">
@@ -13,9 +26,13 @@ export default function About() {
         <div className="pointer-events-none absolute -bottom-20 -right-20 h-72 w-72 rounded-full bg-blue-200/30 blur-3xl" />
 
         <div className="relative p-8 md:p-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-lg">
-            About Me
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs">
+            🩵 About Me
           </div>
+
+          <h1 className="mt-4 text-3xl md:text-4xl font-bold text-gray-900">
+            Hey!
+          </h1>
 
           <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
             I’m <span className="font-medium text-gray-900">SU LEI LEI NAING</span>, a Computer Science
@@ -73,7 +90,7 @@ export default function About() {
           <div className="bg-white border border-blue-100 rounded-[28px] p-6 shadow-sm">
             <div className="flex items-center justify-between">
               <h2 className="text-lg font-semibold text-gray-900">Skills</h2>
-              <span className="text-xs text-gray-400">what I use/learnt</span>
+              <span className="text-xs text-gray-400">What I use / learnt</span>
             </div>
 
             <div className="mt-4 flex flex-wrap gap-2">
@@ -87,20 +104,17 @@ export default function About() {
                 </span>
               ))}
             </div>
-
-            {/* gentle divider */}
             <div className="mt-6 h-px bg-gradient-to-r from-transparent via-blue-200/60 to-transparent" />
 
             <p className="mt-5 text-sm text-gray-600 leading-relaxed">
-              I like writing code that’s easy to read and interfaces that feel calm and friendly.
-              Small details matter to me — spacing, alignment, and consistency 🩵
+              I enjoy learning through practice and gradually understanding how things work.
+I try to improve a little with each project 🩵
             </p>
           </div>
 
-          {/* Interests */}
           <div className="bg-white border border-blue-100 rounded-[28px] p-6 shadow-sm">
             <h2 className="text-lg font-semibold text-gray-900">Interests</h2>
-            <p className="text-sm text-gray-500 mt-1">what I’m curious about</p>
+            <p className="text-sm text-gray-500 mt-1">What I’m curious about</p>
 
             <div className="mt-5 space-y-4">
               {interests.map((it) => (
@@ -125,7 +139,7 @@ export default function About() {
       {/* Bottom calm strip */}
       <section className="bg-blue-50/70 border border-blue-100 rounded-[28px] p-6 shadow-sm">
         <p className="text-sm text-blue-900/70">
-          ✧ I’m building my portfolio step by step — keeping it simple, soft, and intentional.
+          ✧  I am still a learner with strong interest and commitment to my studies.
         </p>
       </section>
     </div>
