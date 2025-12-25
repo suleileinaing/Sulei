@@ -51,7 +51,7 @@ export default function About() {
           <div className="bg-white border border-blue-100 rounded-[28px] p-6 shadow-sm">
             <div className="rounded-[24px] bg-blue-50 border border-blue-100 p-3">
               <img
-                src="/profile.png"
+                src="${process.env.PUBLIC_URL}/profile.png"
                 alt="SU LEI LEI NAING"
                 className="w-50 rounded-[18px] object-cover"
               />
