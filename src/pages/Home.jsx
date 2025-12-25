@@ -19,7 +19,7 @@ export default function Home() {
             <div className="w-full md:w-[240px]">
               <div className="rounded-full bg-blue-50 border border-blue-100 p-1">
                 <img
-                  src="${process.env.PUBLIC_URL}/profile.png"
+                  src={`${process.env.PUBLIC_URL}/profile.png`}
                   alt="SU LEI LEI NAING"
                   className="w-full aspect-square rounded-full object-cover"
                 />

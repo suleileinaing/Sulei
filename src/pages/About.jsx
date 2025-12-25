@@ -46,12 +46,11 @@ export default function About() {
       </section>
 
       <section className="grid md:grid-cols-12 gap-6">
-        {/* Left: photo + mini note */}
         <div className="md:col-span-5 space-y-6">
           <div className="bg-white border border-blue-100 rounded-[28px] p-6 shadow-sm">
             <div className="rounded-[24px] bg-blue-50 border border-blue-100 p-3">
               <img
-                src="${process.env.PUBLIC_URL}/profile.png"
+                src={`${process.env.PUBLIC_URL}/profile.png`}
                 alt="SU LEI LEI NAING"
                 className="w-50 rounded-[18px] object-cover"
               />
