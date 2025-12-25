@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/suleileinaing/Sulei/static/css/main.1fbc7e8c.css",
-    "main.js": "/suleileinaing/Sulei/static/js/main.5dc1eda1.js",
-    "index.html": "/suleileinaing/Sulei/index.html",
-    "main.1fbc7e8c.css.map": "/suleileinaing/Sulei/static/css/main.1fbc7e8c.css.map",
-    "main.5dc1eda1.js.map": "/suleileinaing/Sulei/static/js/main.5dc1eda1.js.map"
+    "main.css": "/Sulei/static/css/main.1fbc7e8c.css",
+    "main.js": "/Sulei/static/js/main.429b1654.js",
+    "index.html": "/Sulei/index.html",
+    "main.1fbc7e8c.css.map": "/Sulei/static/css/main.1fbc7e8c.css.map",
+    "main.429b1654.js.map": "/Sulei/static/js/main.429b1654.js.map"
   },
   "entrypoints": [
     "static/css/main.1fbc7e8c.css",
-    "static/js/main.5dc1eda1.js"
+    "static/js/main.429b1654.js"
   ]
 }
