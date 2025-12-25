@@ -1,14 +1,13 @@
 export default function Contact() {
-  const FORMSPREE_ENDPOINT = "https://formspree.io/f/mlgrkyqr"; //
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/mlgrkyqr";
 
   return (
-    <div className="max-w-4xl mx-auto space-y-6">
-      {/* Header */}
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-6">
       <section className="relative overflow-hidden bg-white border border-blue-100 rounded-[28px] shadow-sm">
-        <div className="pointer-events-none absolute -top-16 -left-16 h-64 w-64 rounded-full bg-blue-100/70 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-20 -right-20 h-72 w-72 rounded-full bg-blue-200/30 blur-3xl" />
+        <div className="pointer-events-none absolute -top-16 -left-16 h-56 w-56 sm:h-64 sm:w-64 rounded-full bg-blue-100/70 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 sm:h-72 sm:w-72 rounded-full bg-blue-200/30 blur-3xl" />
 
-        <div className="relative p-8 md:p-10">
+        <div className="relative p-6 sm:p-8 md:p-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs">
             💌 contact
           </div>
@@ -18,17 +17,21 @@ export default function Contact() {
           </h1>
 
           <p className="mt-3 text-gray-600 max-w-2xl leading-relaxed">
-            Leave me a message here. I will be in touch as soon as possible.
+            Leave me a message here. I’ll be in touch as soon as possible.
           </p>
         </div>
 
         <div className="h-2 bg-gradient-to-r from-blue-100 via-white to-blue-100" />
       </section>
 
-      <section className="bg-white border border-blue-100 rounded-[28px] p-8 shadow-sm">
+      <section className="bg-white border border-blue-100 rounded-[28px] p-5 sm:p-6 md:p-8 shadow-sm">
         <form action={FORMSPREE_ENDPOINT} method="POST" className="space-y-5">
           <input type="text" name="_gotcha" className="hidden" />
-          <input type="hidden" name="_subject" value="New message from portfolio website" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="New message from portfolio website"
+          />
 
           <div>
             <label className="text-sm text-gray-600">Name</label>
@@ -62,7 +65,7 @@ export default function Contact() {
             <label className="text-sm text-gray-600">Message</label>
             <textarea
               name="message"
-              rows="5"
+              rows="4"
               required
               placeholder="Write your message..."
               className="mt-2 w-full rounded-2xl border border-blue-100 px-4 py-2.5
@@ -74,7 +77,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="w-full mt-6 rounded-2xl bg-blue-100 text-blue-700 py-3
+            className="w-full mt-4 rounded-2xl bg-blue-100 text-blue-700 py-3
                        border border-blue-200
                        hover:bg-blue-600 hover:text-white
                        transition-all duration-300
@@ -89,10 +92,9 @@ export default function Contact() {
         </form>
       </section>
 
-      {/* Calm note */}
-      <section className="bg-blue-50/70 border border-blue-100 rounded-[28px] p-6 shadow-sm">
+      <section className="bg-blue-50/70 border border-blue-100 rounded-[28px] p-5 sm:p-6 shadow-sm">
         <p className="text-sm text-blue-900/70">
-          I’m always happy to connect and learn from new environment 🩵
+          I’m always happy to connect and learn from new environments 🩵
         </p>
       </section>
     </div>

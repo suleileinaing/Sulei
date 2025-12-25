@@ -25,12 +25,12 @@ const items = [
 
 export default function Education() {
   return (
-    <div className="max-w-5xl mx-auto space-y-6">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-6">
       <section className="relative overflow-hidden bg-white border border-blue-100 rounded-[28px] shadow-sm">
-        <div className="pointer-events-none absolute -top-16 -left-16 h-64 w-64 rounded-full bg-blue-100/70 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-20 -right-20 h-72 w-72 rounded-full bg-blue-200/30 blur-3xl" />
+        <div className="pointer-events-none absolute -top-16 -left-16 h-56 w-56 sm:h-64 sm:w-64 rounded-full bg-blue-100/70 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 sm:h-72 sm:w-72 rounded-full bg-blue-200/30 blur-3xl" />
 
-        <div className="relative p-8 md:p-10">
+        <div className="relative p-6 sm:p-8 md:p-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs">
             🎓 Education
           </div>
@@ -47,16 +47,18 @@ export default function Education() {
         <div className="h-2 bg-gradient-to-r from-blue-100 via-white to-blue-100" />
       </section>
 
-
       <section className="space-y-4">
         {items.map((e) => (
           <div
             key={e.school}
-            className="bg-white border border-blue-100 rounded-[28px] p-6 md:p-7 shadow-sm"
+            className="bg-white border border-blue-100 rounded-[28px]
+                       p-5 sm:p-6 md:p-7 shadow-sm"
           >
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2">
               <div>
-                <h2 className="text-xl font-semibold text-gray-900">{e.school}</h2>
+                <h2 className="text-lg sm:text-xl font-semibold text-gray-900">
+                  {e.school}
+                </h2>
                 <p className="mt-1 text-gray-600">{e.degree}</p>
               </div>
 
@@ -64,17 +66,15 @@ export default function Education() {
                 {e.period}
               </span>
             </div>
-            
 
-            {/* Soft divider */}
-            <div className="mt-5 h-px bg-gradient-to-r from-transparent via-blue-200/60 to-transparent" />
+            <div className="mt-4 h-px bg-gradient-to-r from-transparent via-blue-200/60 to-transparent" />
 
-            {/* Details */}
-            <div className="mt-5 flex flex-wrap gap-2">
+            <div className="mt-4 flex flex-wrap gap-1.5 sm:gap-2">
               {e.details.map((d) => (
                 <span
                   key={d}
-                  className="px-3 py-1.5 rounded-2xl text-sm bg-blue-50/60 text-blue-800/80
+                  className="px-3 py-1.5 rounded-2xl text-xs sm:text-sm
+                             bg-blue-50/60 text-blue-800/80
                              border border-blue-100"
                 >
                   {d}

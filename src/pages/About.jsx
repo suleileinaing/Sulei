@@ -1,31 +1,42 @@
 export default function About() {
-  const skills = ["Python", "Pandas", "C/C++", "SQL", "React", "Tailwind CSS", "JavaScript", "HTML/CSS", "Git/GitHub"];
- const interests = [
-  {
-    title: "Data Analysis",
-    note: "I enjoy working with data and understanding patterns through careful analysis.",
-  },
-  {
-    title: "UI / UX",
-    note: "I’m interested in designing interfaces that feel simple, clear, and comfortable to use.",
-  },
-  {
-    title: "AI",
-    note: "I’m curious about how models learn and how AI can be applied thoughtfully.",
-  },
-  {
-    title: "Web & App Development",
-    note: "I like building web and app projects and learning how ideas turn into real products.",
-  },
-];
+  const skills = [
+    "Python",
+    "Pandas",
+    "C/C++",
+    "SQL",
+    "React",
+    "Tailwind CSS",
+    "JavaScript",
+    "HTML/CSS",
+    "Git/GitHub",
+  ];
+
+  const interests = [
+    {
+      title: "Data Analysis",
+      note: "I enjoy working with data and understanding patterns through careful analysis.",
+    },
+    {
+      title: "UI / UX",
+      note: "I’m interested in designing interfaces that feel simple, clear, and comfortable to use.",
+    },
+    {
+      title: "AI",
+      note: "I’m curious about how models learn and how AI can be applied thoughtfully.",
+    },
+    {
+      title: "Web & App Development",
+      note: "I like building web and app projects and learning how ideas turn into real products.",
+    },
+  ];
 
   return (
-    <div className="max-w-5xl mx-auto space-y-6">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-6">
       <section className="relative overflow-hidden bg-white border border-blue-100 rounded-[28px] shadow-sm">
-        <div className="pointer-events-none absolute -top-16 -left-16 h-64 w-64 rounded-full bg-blue-100/70 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-20 -right-20 h-72 w-72 rounded-full bg-blue-200/30 blur-3xl" />
+        <div className="pointer-events-none absolute -top-16 -left-16 h-56 w-56 sm:h-64 sm:w-64 rounded-full bg-blue-100/70 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 sm:h-72 sm:w-72 rounded-full bg-blue-200/30 blur-3xl" />
 
-        <div className="relative p-8 md:p-10">
+        <div className="relative p-6 sm:p-8 md:p-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs">
             🩵 About Me
           </div>
@@ -45,25 +56,25 @@ export default function About() {
         <div className="h-2 bg-gradient-to-r from-blue-100 via-white to-blue-100" />
       </section>
 
-      <section className="grid md:grid-cols-12 gap-6">
-        <div className="md:col-span-5 space-y-6">
-          <div className="bg-white border border-blue-100 rounded-[28px] p-6 shadow-sm">
-            <div className="rounded-[24px] bg-blue-50 border border-blue-100 p-3">
+      <section className="grid md:grid-cols-12 gap-4 sm:gap-6">
+        <div className="md:col-span-5 space-y-4 sm:space-y-6">
+          <div className="bg-white border border-blue-100 rounded-[28px] p-5 sm:p-6 shadow-sm">
+            <div className="w-36 sm:w-44 md:w-56 lg:w-full mx-auto
+                rounded-[24px] bg-blue-50 border border-blue-100 p-3">
               <img
-                src={`${process.env.PUBLIC_URL}/profile.png`}
+                src={process.env.PUBLIC_URL + "/profile.png"}
                 alt="SU LEI LEI NAING"
-                className="w-50 rounded-[18px] object-cover"
+                className="w-full aspect-square rounded-[18px] object-cover"
               />
             </div>
-
-            <div className="mt-5">
+            <div className="mt-5 text-center md:text-left">
               <p className="text-sm text-gray-500">SU LEI LEI NAING</p>
               <p className="text-lg font-semibold text-gray-900">
                 CSE @ Kyung Hee University
               </p>
             </div>
 
-            <div className="mt-4 flex flex-wrap gap-2">
+            <div className="mt-4 flex flex-wrap justify-center md:justify-start gap-2">
               {["Computer Science", "Data Analysis", "Detail lover", "INFP"].map((tag) => (
                 <span
                   key={tag}
@@ -75,7 +86,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="bg-white border border-blue-100 rounded-[28px] p-6 shadow-sm">
+          <div className="bg-white border border-blue-100 rounded-[28px] p-5 sm:p-6 shadow-sm">
             <p className="text-sm text-gray-500">A small note</p>
             <p className="mt-2 text-gray-700 leading-relaxed">
               I’m happiest when a project feels <span className="font-medium">simple</span>,{" "}
@@ -85,11 +96,13 @@ export default function About() {
           </div>
         </div>
 
-        <div className="md:col-span-7 space-y-6">
-          <div className="bg-white border border-blue-100 rounded-[28px] p-6 shadow-sm">
-            <div className="flex items-center justify-between">
+        <div className="md:col-span-7 space-y-4 sm:space-y-6">
+          <div className="bg-white border border-blue-100 rounded-[28px] p-5 sm:p-6 shadow-sm">
+            <div className="flex items-start justify-between gap-4">
               <h2 className="text-lg font-semibold text-gray-900">Skills</h2>
-              <span className="text-xs text-gray-400">What I use / learnt</span>
+              <span className="text-xs text-gray-400 text-right">
+                What I use / learned
+              </span>
             </div>
 
             <div className="mt-4 flex flex-wrap gap-2">
@@ -103,42 +116,43 @@ export default function About() {
                 </span>
               ))}
             </div>
+
             <div className="mt-6 h-px bg-gradient-to-r from-transparent via-blue-200/60 to-transparent" />
 
             <p className="mt-5 text-sm text-gray-600 leading-relaxed">
               I enjoy learning through practice and gradually understanding how things work.
-I try to improve a little with each project 🩵
+              I try to improve a little with each project 🩵
             </p>
           </div>
 
-          <div className="bg-white border border-blue-100 rounded-[28px] p-6 shadow-sm">
+          <div className="bg-white border border-blue-100 rounded-[28px] p-5 sm:p-6 shadow-sm">
             <h2 className="text-lg font-semibold text-gray-900">Interests</h2>
             <p className="text-sm text-gray-500 mt-1">What I’m curious about</p>
 
-            <div className="mt-5 space-y-4">
+            <div className="mt-5 space-y-3 sm:space-y-4">
               {interests.map((it) => (
                 <div
                   key={it.title}
-                  className="rounded-2xl border border-blue-100 bg-blue-50/40 p-5"
+                  className="rounded-2xl border border-blue-100 bg-blue-50/40 p-4 sm:p-5"
                 >
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                     <p className="font-medium text-gray-900">{it.title}</p>
-                    <span className="text-xs px-2 py-1 rounded-full bg-white border border-blue-100 text-gray-500">
+                    <span className="self-start sm:self-auto text-xs px-2 py-1 rounded-full bg-white border border-blue-100 text-gray-500">
                       gentle focus
                     </span>
                   </div>
                   <p className="mt-2 text-sm text-gray-600 leading-relaxed">{it.note}</p>
                 </div>
+
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Bottom calm strip */}
-      <section className="bg-blue-50/70 border border-blue-100 rounded-[28px] p-6 shadow-sm">
+      <section className="bg-blue-50/70 border border-blue-100 rounded-[28px] p-5 sm:p-6 shadow-sm">
         <p className="text-sm text-blue-900/70">
-          ✧  I am still a learner with strong interest and commitment to my studies.
+          ✧ I am still a learner with strong interest and commitment to my studies.
         </p>
       </section>
     </div>
