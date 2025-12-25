@@ -1,27 +1,27 @@
 const projects = [
   {
-    name: "Project One",
-    desc: "Short description of what it does.",
-    tags: ["React", "Tailwind"],
-    link: "#",
+    name: "Youtube Views Prediction",
+    desc: "AI programming project, using various AI libraries",
+    tags: ["Python", "Pandas", "Numpy", "Sklearn"],
+    link: "https://github.com/suleileinaing/Predicting-Youtube-Video-Views",
   },
   {
-    name: "Project Two",
-    desc: "Another project description.",
-    tags: ["Node", "API"],
-    link: "#",
+    name: "Simple Physics Engine",
+    desc: "Simple simulation of billiard game, using pygame",
+    tags: ["Python", "Pygame"],
+    link: "https://github.com/suleileinaing/Simple-Physics-Engine",
   },
   {
-    name: "Project Three",
-    desc: "Add more projects anytime.",
-    tags: ["ML", "Python"],
-    link: "#",
+    name: "Snake Game",
+    desc: "Added new missions to snake game template given by ChatGPT",
+    tags: ["Python", "Pygame"],
+    link: "https://github.com/suleileinaing/snake-game",
   },
   {
-    name: "Project Three",
-    desc: "Add more projects anytime.",
-    tags: ["ML", "Python"],
-    link: "#",
+    name: "Arrow Runner",
+    desc: "Simple Python Game",
+    tags: ["Python", "Pygame"],
+    link: "https://github.com/suleileinaing/Arrow-Runner",
   },
 ];
 

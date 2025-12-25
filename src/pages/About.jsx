@@ -65,7 +65,7 @@ export default function About() {
             </div>
 
             <div className="mt-4 flex flex-wrap gap-2">
-              {["Computer Science", "Data Analysis", "Detail lover"].map((tag) => (
+              {["Computer Science", "Data Analysis", "Detail lover", "INFP"].map((tag) => (
                 <span
                   key={tag}
                   className="text-xs px-3 py-1.5 rounded-full bg-blue-50 text-blue-700 border border-blue-100"
