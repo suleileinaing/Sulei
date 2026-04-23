@@ -1,6 +1,17 @@
 import { Link } from "react-router-dom";
 
 export default function Home() {
+
+  const birthDate = new Date("2002-04-24"); // Replace with your actual birthday
+  const today = new Date();
+  
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+  
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-6">
       <section
@@ -37,7 +48,7 @@ export default function Home() {
               </h1>
 
               <p className="mt-4 text-gray-600 leading-relaxed md:max-w-2xl">
-                A 24-year-old Computer Science student at Kyung Hee University with a genuine
+                A {age}-year-old Computer Science student at Kyung Hee University with a genuine
                 interest in learning, problem-solving, and building things thoughtfully.
               </p>
 
