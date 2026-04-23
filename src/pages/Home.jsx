@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
 
-  const birthDate = new Date("2002-04-24"); // Replace with your actual birthday
+  const birthDate = new Date("2001-07-27"); // Replace with your actual birthday
   const today = new Date();
   
   let age = today.getFullYear() - birthDate.getFullYear();
