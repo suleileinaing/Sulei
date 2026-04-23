@@ -37,7 +37,7 @@ const projects = [
   },
   {
     name: "SQLCaseStudy_IPL",
-    desc: "Data analysis of IPL player auctions featuring advanced SQL techniques to evaluate team spending and player price classifications.",
+    desc: "SQL analysis of IPL auctions using advanced techniques to evaluate team spending and player price classifications.",
     tags : ["SQL"],
     link : "https://github.com/suleileinaing/SQLCaseStudy_IPL",
   }
