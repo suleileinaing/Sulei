@@ -23,6 +23,24 @@ const projects = [
     tags: ["Python", "Pygame"],
     link: "https://github.com/suleileinaing/Arrow-Runner",
   },
+  {
+    name: "SQLCaseStudy_FlightsData",
+    desc: "End-to-end SQL analysis of flight operations, revenue, and travel behavior using complex queries.",
+    tags : ["SQL"],
+    link : "https://github.com/suleileinaing/SQLCaseStudy_Flights",
+  },
+  {
+    name: "SQLCaseStudy_T20I World Cup Analysi",
+    desc: "Comprehensive 2024 T20I analysis using advanced T-SQL to transform raw match logs into detailed performance and win-rate insights.",
+    tags : ["SQL"],
+    link : "https://github.com/suleileinaing/SQLCaseStudy_T20I",
+  },
+  {
+    name: "SQLCaseStudy_IPL",
+    desc: "Data analysis of IPL player auctions featuring advanced SQL techniques to evaluate team spending and player price classifications.",
+    tags : ["SQL"],
+    link : "https://github.com/suleileinaing/SQLCaseStudy_IPL",
+  }
 ];
 
 export default function Projects() {
