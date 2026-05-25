@@ -4,7 +4,7 @@ const items = [
     degree: "B.S. in Computer Science",
     period: "2023 – Present",
     details:
-      ["Data Structures & Algorithms", "Database (SQL)", "OOP", "Computer Architecture", "Computer Networks", "Python", "C/C++", "AI Programming", "Machine Learning"]
+      ["Data Structures & Algorithms", "Database (SQL)", "Big Data Mining", "OOP", "Computer Architecture", "Computer Networks", "Python", "C/C++", "AI Programming", "Machine Learning", "Operating System", "Cybersecurity", "Web/Mobile Programming", "Game Programming"]
   },
   {
     school: "University of Medicine 1, Yangon, Myanmar",

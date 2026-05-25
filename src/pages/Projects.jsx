@@ -1,7 +1,7 @@
 const projects = [
   {
     name: "Youtube Views Prediction",
-    desc: "AI programming project, using various AI libraries",
+    desc: "AI programming project, predicting views based on trends, channal subsribers and other channels' insights, using various AI libraries",
     tags: ["Python", "Pandas", "Numpy", "Sklearn"],
     link: "https://github.com/suleileinaing/Predicting-Youtube-Video-Views",
   },
@@ -24,23 +24,29 @@ const projects = [
     link: "https://github.com/suleileinaing/Arrow-Runner",
   },
   {
-    name: "SQLCaseStudy_FlightsData",
-    desc: "End-to-end SQL analysis of flight operations, revenue, and travel behavior using complex queries.",
-    tags : ["SQL"],
-    link : "https://github.com/suleileinaing/SQLCaseStudy_Flights",
+    name: "Flight Data Analysis",
+    desc: "SQL case study: End-to-end SQL analysis of flight operations, revenue, and travel behavior using complex queries.",
+    tags: ["SQL"],
+    link: "https://github.com/suleileinaing/SQLCaseStudy_Flights",
   },
   {
-    name: "SQLCaseStudy_T20I World Cup Analysi",
-    desc: "Comprehensive 2024 T20I analysis using advanced T-SQL to transform raw match logs into detailed performance and win-rate insights.",
-    tags : ["SQL"],
-    link : "https://github.com/suleileinaing/SQLCaseStudy_T20I",
+    name: "T20I Cricket Matches Analysis",
+    desc: "SQL Case analysis Advanced T-SQL analysis transforming raw 2024 T20I match logs into performance metrics and win-rate insights.",
+    tags: ["SQL"],
+    link: "https://github.com/suleileinaing/SQLCaseStudy_T20I",
   },
   {
-    name: "SQLCaseStudy_IPL",
-    desc: "SQL analysis of IPL auctions using advanced techniques to evaluate team spending and player price classifications.",
-    tags : ["SQL"],
-    link : "https://github.com/suleileinaing/SQLCaseStudy_IPL",
-  }
+    name: "IPL Teams Analysis",
+    desc: "SQL case study . SQL analysis of IPL auctions using advanced techniques to evaluate team spending and player price classifications.",
+    tags: ["SQL"],
+    link: "https://github.com/suleileinaing/SQLCaseStudy_IPL",
+  },
+  {
+    name: "SK Kindergarten Analysis",
+    desc: "Data analysis case study. Exploratory analysis of 7,954 South Korean kindergartens evaluating regional resource distribution and child-to-school trends using Python and OOP.",
+    tags: ["Python", "Pandas", "Matplotlib"],
+    link: "https://github.com/suleileinaing/SK_Kindergarten_Data_Analysis",
+  },
 ];
 
 export default function Projects() {
@@ -60,8 +66,8 @@ export default function Projects() {
           </h1>
 
           <p className="mt-3 text-gray-600 max-w-3xl leading-relaxed">
-            A small collection of projects I’ve worked on — mostly from university
-            coursework and a few personal explorations.
+            A small collection of projects I’ve worked on — mostly from
+            university coursework and a few personal explorations.
           </p>
         </div>
 
