@@ -6,9 +6,9 @@ const projects = [
     link: "https://github.com/suleileinaing/Predicting-Youtube-Video-Views",
   },
   {
-    name: "Simple Physics Engine",
-    desc: "Simple simulation of billiard game, using pygame",
-    tags: ["Python", "Pygame"],
+    name: "2D Billiards Physics Engine",
+    desc: "Physics simulation project. 2D rigid-body billiards simulator implementing custom vector mathematics to model elastic collisions, continuous velocity propagation, and precise linear momentum transfer between independent sphere components.",
+    tags: ["Python", "Pygame", "Physics Engine"],
     link: "https://github.com/suleileinaing/Simple-Physics-Engine",
   },
   {
@@ -19,7 +19,7 @@ const projects = [
   },
   {
     name: "Arrow Runner",
-    desc: "Simple Python Game",
+    desc: "2D grid-based arcade game built with Pygame. Implements a multi-state game loop managing structured menus, 3-level time-attack progressions, and a unique step-based directional movement mechanic.",
     tags: ["Python", "Pygame"],
     link: "https://github.com/suleileinaing/Arrow-Runner",
   },
