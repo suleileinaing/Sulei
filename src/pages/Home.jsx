@@ -48,8 +48,8 @@ export default function Home() {
               </h1>
 
               <p className="mt-4 text-gray-600 leading-relaxed md:max-w-2xl">
-                A {age}-year-old Computer Science student at Kyung Hee University with a genuine
-                interest in learning, problem-solving, and building things thoughtfully.
+                I’m a {age}-year-old Computer Science student at Kyung Hee University, with a genuine
+                interest in learning, problem-solving, and building thoughtful, meaningful projects.
               </p>
 
               <div className="mt-6 h-px bg-gradient-to-r from-transparent via-blue-200/60 to-transparent" />
@@ -60,7 +60,7 @@ export default function Home() {
                   to="/about"
                   className="underline underline-offset-4 text-gray-600 hover:text-blue-700 transition-colors"
                 >
-                  Click here
+                  Learn more
                 </Link>
                 .
               </p>

@@ -13,11 +13,11 @@ export default function Contact() {
           </div>
 
           <h1 className="mt-4 text-3xl md:text-4xl font-bold text-gray-900">
-            Contact me
+            Contact Me
           </h1>
 
           <p className="mt-3 text-gray-600 max-w-2xl leading-relaxed">
-            Leave me a message here. I’ll be in touch as soon as possible.
+            Send me a message here and I’ll get back to you as soon as possible.
           </p>
         </div>
 

@@ -1,14 +1,41 @@
 export default function About() {
-  const skills = [
+  const tech_skills = [
     "Python",
     "Pandas",
+    "NumPy", 
+    "scikit-learn", 
+    "Matplotlib",
     "C/C++",
     "SQL",
     "React",
-    "Tailwind CSS",
     "JavaScript",
     "HTML/CSS",
-    "Git/GitHub",
+    "Git/GitHub"
+  ];
+
+  const lang_skills = [
+    {
+      language: "English",
+      level: "C1",
+      details: [
+        "IELTS overall band 8.0 (September 2026)",
+        "TOEIC Listening and Reading 935/990 (February 2025)",
+      ],
+    },
+    {
+      language: "Korean",
+      level: "TOPIK II Level 6",
+      details: [
+        "246/300 points (April 2025)",
+      ],
+    },
+    {
+      language: "Burmese",
+      level: "Native",
+      details: [
+        "Mother tongue",
+      ],
+    },
   ];
 
   const interests = [
@@ -46,10 +73,10 @@ export default function About() {
           </h1>
 
           <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-            I’m <span className="font-medium text-gray-900">SU LEI LEI NAING</span>, a Computer Science
+            I’m <span className="font-medium text-gray-900">SU LEI LEI NAING</span>, a senior-year Computer Science
             student at Kyung Hee University. I enjoy learning by building—turning small ideas into
-            clean, thoughtful projects. I’m detail-oriented, and I love making things feel calm,
-            consistent, and a little bit cute.
+            clean, thoughtful projects. I’m detail-oriented and enjoy making things feel calm,
+            consistent, and thoughtfully designed.
           </p>
         </div>
 
@@ -91,7 +118,7 @@ export default function About() {
             <p className="mt-2 text-gray-700 leading-relaxed">
               I’m happiest when a project feels <span className="font-medium">simple</span>,{" "}
               <span className="font-medium">organized</span>, and{" "}
-              <span className="font-medium">gently polished</span> — like everything is in the right place 🩵
+              <span className="font-medium">gently polished</span> — like everything is in its right place 🩵
             </p>
           </div>
         </div>
@@ -99,14 +126,14 @@ export default function About() {
         <div className="md:col-span-7 space-y-4 sm:space-y-6">
           <div className="bg-white border border-blue-100 rounded-[28px] p-5 sm:p-6 shadow-sm">
             <div className="flex items-start justify-between gap-4">
-              <h2 className="text-lg font-semibold text-gray-900">Skills</h2>
+              <h2 className="text-lg font-semibold text-gray-900">Technical Skills</h2>
               <span className="text-xs text-gray-400 text-right">
                 What I use / learned
               </span>
             </div>
 
             <div className="mt-4 flex flex-wrap gap-2">
-              {skills.map((s) => (
+              {tech_skills.map((s) => (
                 <span
                   key={s}
                   className="px-3 py-1.5 rounded-2xl text-sm bg-gray-50 border text-gray-700
@@ -121,8 +148,34 @@ export default function About() {
 
             <p className="mt-5 text-sm text-gray-600 leading-relaxed">
               I enjoy learning through practice and gradually understanding how things work.
-              I try to improve a little with each project 🩵
+              I try to improve a little with every project 🩵
             </p>
+
+          </div>
+           <div className="bg-white border border-blue-100 rounded-[28px] p-5 sm:p-6 shadow-sm">
+            <h2 className="text-lg font-semibold text-gray-900">Language Skills</h2>
+
+            <div className="mt-5 space-y-3 sm:space-y-4">
+              {lang_skills.map((language) => (
+                <div
+                  key={language.language}
+                  className="rounded-2xl border border-blue-100 bg-blue-50/40 p-4 sm:p-5"
+                >
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                    <p className="font-medium text-gray-900">{language.language}</p>
+                    <span className="self-start sm:self-auto text-xs px-2 py-1 rounded-full bg-white border border-blue-100 text-gray-500">
+                      {language.level}
+                    </span>
+                  </div>
+
+                  <ul className="mt-3 space-y-1 text-sm text-gray-600">
+                    {language.details.map((detail) => (
+                      <li key={detail}>• {detail}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="bg-white border border-blue-100 rounded-[28px] p-5 sm:p-6 shadow-sm">

@@ -1,51 +1,57 @@
 const projects = [
   {
-    name: "Youtube Views Prediction",
-    desc: "AI programming project, predicting views based on trends, channal subsribers and other channels' insights, using various AI libraries",
-    tags: ["Python", "Pandas", "Numpy", "Sklearn"],
+    name: "SK Kindergarten Analysis",
+    desc: "Data analysis case study exploring 7,954 South Korean kindergartens to evaluate regional resource distribution and child-to-school trends using Python and object-oriented programming.",
+    tags: ["Python", "Pandas", "Matplotlib"],
+    link: "https://github.com/suleileinaing/SK_Kindergarten_Data_Analysis",
+  },
+  {
+    name: "YouTube Views Prediction",
+    desc: "An AI project that predicts video views based on trends, video duration, title, channel subscribers, and other channel insights using various machine learning libraries.",
+    tags: ["Python", "Pandas", "NumPy", "scikit-learn"],
     link: "https://github.com/suleileinaing/Predicting-Youtube-Video-Views",
   },
   {
     name: "2D Billiards Physics Engine",
-    desc: "Physics simulation project. 2D rigid-body billiards simulator implementing custom vector mathematics to model elastic collisions, continuous velocity propagation, and precise linear momentum transfer between independent sphere components.",
+    desc: "A 2D rigid-body billiards simulator that models elastic collisions, continuous velocity propagation, and momentum transfer using custom vector mathematics.",
     tags: ["Python", "Pygame", "Physics Engine"],
     link: "https://github.com/suleileinaing/Simple-Physics-Engine",
   },
   {
-    name: "Snake Game",
-    desc: "Added new missions to snake game template given by ChatGPT",
-    tags: ["Python", "Pygame"],
-    link: "https://github.com/suleileinaing/snake-game",
-  },
-  {
-    name: "Arrow Runner",
-    desc: "2D grid-based arcade game built with Pygame. Implements a multi-state game loop managing structured menus, 3-level time-attack progressions, and a unique step-based directional movement mechanic.",
-    tags: ["Python", "Pygame"],
-    link: "https://github.com/suleileinaing/Arrow-Runner",
-  },
-  {
-    name: "Flight Data Analysis",
-    desc: "SQL case study: End-to-end SQL analysis of flight operations, revenue, and travel behavior using complex queries.",
-    tags: ["SQL"],
-    link: "https://github.com/suleileinaing/SQLCaseStudy_Flights",
-  },
-  {
     name: "T20I Cricket Matches Analysis",
-    desc: "SQL Case analysis Advanced T-SQL analysis transforming raw 2024 T20I match logs into performance metrics and win-rate insights.",
+    desc: "A SQL case study analyzing 2024 T20I match data to transform raw logs into performance metrics and win-rate insights using advanced T-SQL queries.",
     tags: ["SQL"],
     link: "https://github.com/suleileinaing/SQLCaseStudy_T20I",
   },
   {
     name: "IPL Teams Analysis",
-    desc: "SQL case study . SQL analysis of IPL auctions using advanced techniques to evaluate team spending and player price classifications.",
+    desc: "A SQL case study analyzing IPL auction data to evaluate team spending patterns and player price classifications using advanced querying techniques.",
     tags: ["SQL"],
     link: "https://github.com/suleileinaing/SQLCaseStudy_IPL",
   },
   {
-    name: "SK Kindergarten Analysis",
-    desc: "Data analysis case study. Exploratory analysis of 7,954 South Korean kindergartens evaluating regional resource distribution and child-to-school trends using Python and OOP.",
-    tags: ["Python", "Pandas", "Matplotlib"],
-    link: "https://github.com/suleileinaing/SK_Kindergarten_Data_Analysis",
+    name: "Flight Data Analysis",
+    desc: "An end-to-end SQL case study examining flight operations, revenue, and travel behavior through complex queries and data analysis.",
+    tags: ["SQL"],
+    link: "https://github.com/suleileinaing/SQLCaseStudy_Flights",
+  },
+   {
+    name: "Movie Recommendation System",
+    desc: "A movie recommender built with Python and Streamlit using TF-IDF and cosine similarity to suggest related films. It was completed as a practical exercise in data preprocessing and recommendation techniques.",
+    tags: ["Python", "Pandas", "scikit-learn", "Streamlit", "TMDB API"],
+    link: "https://github.com/suleileinaing/Movie-Recommendation-System",
+  },
+  {
+    name: "Snake Game",
+    desc: "An extended Snake game with additional missions and gameplay features, developed while learning the fundamentals of Pygame, including game loops, event handling, collision detection, and state management.",
+    tags: ["Python", "Pygame"],
+    link: "https://github.com/suleileinaing/snake-game",
+  },
+  {
+    name: "Arrow Runner",
+    desc: "A 2D grid-based arcade game built with Pygame, featuring a multi-state game loop, structured menus, three-level time-attack progression, and a unique step-based directional movement mechanic.",
+    tags: ["Python", "Pygame"],
+    link: "https://github.com/suleileinaing/Arrow-Runner",
   },
 ];
 
@@ -66,8 +72,8 @@ export default function Projects() {
           </h1>
 
           <p className="mt-3 text-gray-600 max-w-3xl leading-relaxed">
-            A small collection of projects I’ve worked on — mostly from
-            university coursework and a few personal explorations.
+            A selection of projects I’ve worked on — mostly from
+            university coursework, along with a few personal explorations.
           </p>
         </div>
 

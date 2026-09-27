@@ -8,19 +8,19 @@ const items = [
   },
   {
     school: "University of Medicine 1, Yangon, Myanmar",
-    degree: "Finished 2nd MBBS",
+    degree: "Completed 2nd MBBS",
     period: "2017 - 2020",
-    details: ["Drop out because of coup d'état"],
+    details: ["Left due to the political situation in Myanmar"],
   },
   {
-  school: "No. 2 Basic Education High School, Sanchaung, Yangon, Myanmar",
-  degree: "Primary to High School Education",
-  period: "2006 – 2017",
-  details: [
-    "Distinctions in all subjects",
-    "Excellence awards in local Mathematics competitions and internalional Mathematics Olympiad",
-  ],
-}
+    school: "No. 2 Basic Education High School, Sanchaung, Yangon, Myanmar",
+    degree: "Primary to High School Education",
+    period: "2006 – 2017",
+    details: [
+      "Distinctions in all subjects",
+      "Excellence awards in local mathematics competitions and the International Mathematics Olympiad",
+    ],
+  }
 ];
 
 export default function Education() {
