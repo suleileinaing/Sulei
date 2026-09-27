@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Sulei/static/css/main.319a5929.css",
-    "main.js": "/Sulei/static/js/main.e38841f2.js",
+    "main.js": "/Sulei/static/js/main.46fa31ce.js",
     "index.html": "/Sulei/index.html",
     "main.319a5929.css.map": "/Sulei/static/css/main.319a5929.css.map",
-    "main.e38841f2.js.map": "/Sulei/static/js/main.e38841f2.js.map"
+    "main.46fa31ce.js.map": "/Sulei/static/js/main.46fa31ce.js.map"
   },
   "entrypoints": [
     "static/css/main.319a5929.css",
-    "static/js/main.e38841f2.js"
+    "static/js/main.46fa31ce.js"
   ]
 }
