@@ -3,6 +3,7 @@ const items = [
     school: "Kyung Hee University",
     degree: "B.S. in Computer Science",
     period: "2023 – Present",
+    scholarship: "Recipient of the Full Tuition Scholarship, International Admissions Scholarship G, for 4 consecutive years.",
     details:
       ["Data Structures & Algorithms", "Database (SQL)", "Big Data Mining", "OOP", "Computer Architecture", "Computer Networks", "Python", "C/C++", "AI Programming", "Machine Learning", "Operating System", "Cybersecurity", "Web/Mobile Programming", "Game Programming"]
   },
@@ -17,7 +18,7 @@ const items = [
     degree: "Primary to High School Education",
     period: "2006 – 2017",
     details: [
-      "Distinctions in all subjects",
+      "Distinction in all subjects on the matriculation exam",
       "Excellence awards in local mathematics competitions and the International Mathematics Olympiad",
     ],
   }
@@ -68,6 +69,13 @@ export default function Education() {
             </div>
 
             <div className="mt-4 h-px bg-gradient-to-r from-transparent via-blue-200/60 to-transparent" />
+
+            {e.scholarship && (
+              <div className="mt-4 flex items-start gap-2 rounded-2xl border border-amber-200 bg-amber-50/80 px-3 py-2 text-sm text-amber-900">
+                <span className="mt-0.5">🏆</span>
+                <span>{e.scholarship}</span>
+              </div>
+            )}
 
             <div className="mt-4 flex flex-wrap gap-1.5 sm:gap-2">
               {e.details.map((d) => (
